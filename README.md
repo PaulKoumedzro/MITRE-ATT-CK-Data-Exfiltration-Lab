@@ -1,13 +1,13 @@
-# Password-Security-Authentication-Hardening-Lab
+#  Data Exfiltration Lab
 
 # Objective
+The purpose of this lab is to replicate a real-world data exfiltration scenario to gain insight into how adversaries extract sensitive information from an organization’s network. This project involves conducting network traffic analysis to uncover techniques often employed by threat actors, such as concealing data within legitimate outbound traffic (HTTP/S, DNS, ICMP, SMB). Using Wireshark, I will examine captured network logs to identify indicators of exfiltration and conclude with recommendations for effective mitigation strategies.
 
 # Skills Learned
 
 # Tools Used
 - WireShark
 - Windows
-- MITRE ATT&CK Framework
 # Steps
 
 Fig1: When examining the Protocol Hierarchy in Wireshark, noticed the presence of protocols such as SMB, DNS, HTTPS, and ICMP, which are commonly leveraged by attackers as techniques for data exfiltration.
