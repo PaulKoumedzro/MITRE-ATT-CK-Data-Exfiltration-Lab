@@ -4,10 +4,17 @@
 The purpose of this lab is to replicate a real-world data exfiltration scenario to gain insight into how adversaries extract sensitive information from an organization’s network. This project involves conducting network traffic analysis to uncover techniques often employed by threat actors, such as concealing data within legitimate outbound traffic (HTTP/S, DNS, ICMP, SMB). Using Wireshark, I will examine captured network logs to identify indicators of exfiltration and conclude with recommendations for effective mitigation strategies.
 
 # Skills Learned
-
+- examining captured network logs for anomalies and indicators of compromise (IoCs).
+- Enhanced proficiency with Wireshark as a forensic and monitoring tool.
+- Developed the ability to distinguish between normal traffic and suspicious traffic patterns.
+- knowledge of common data exfiltration methods used by threat actors.
 # Tools Used
+
 - WireShark
 - Windows
+- AbusedIPdb
+- VirusTotal
+  
 # Steps
 
 Fig1: When examining the Protocol Hierarchy in Wireshark, noticed the presence of protocols such as SMB, DNS, HTTPS, and ICMP, which are commonly leveraged by attackers as techniques for data exfiltration.
@@ -27,3 +34,12 @@ Fig5: Let's Perform OSINT on the second destination IP address 192.168.100.101 (
 
 Fig6: Filtered the logs with  the ip.addr==192.168.100.101 and followed the UDP stream. We do see a file named "Passowrd.txt" that has been exfiltrated.
 ![5](https://github.com/user-attachments/assets/5a8b7d26-0c9b-4b6e-ba08-ca9fb90fcd62)
+
+
+# Recommendations
+- Setup Data loss prevention to detect and block sensitive data being sent over unencrypted protocols.
+- Restrict and monitor outbound traffic using strict firewall rules.
+- Implement deep packet inspection (DPI) and continuous monitoring to detect unusual outbound traffic patterns.
+- Block unauthorized protocols (e.g., ICMP tunneling) and only allow approved services.
+- Monitor for unusual DNS queries, tunneling activity, or abnormal volumes of outbound requests.
+- Use application-layer proxies to detect and prevent data leakage over HTTP/S.
