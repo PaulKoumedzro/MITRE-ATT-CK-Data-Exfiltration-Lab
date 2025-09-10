@@ -17,9 +17,9 @@ Figure2: After examined the communication between devices by analyzing IP traffi
 ![Screenshot 2025-09-09 182814](https://github.com/user-attachments/assets/c4b52fc6-75a1-4db3-bf28-69f222f81628)
 
 
-Figure3: John The Ripper is used to crack the md5 hash we identified earlier  stored in a text file called passwd.txt
+Figure3-a : OSINT is perform on the IP 192.168.100.200.Source IP is likely clear and not involved in nefarious activity, while the destination IP 184.150.49.96 is malicious and reported for Port scan, Hacking, Brute-force and Web App Attack
 ![Untitled](https://github.com/user-attachments/assets/a7526d68-3224-4dc3-af67-772364d92728)
-
+Fig3-b
 # Password Security and Authentication Hardening Recommendations.
 
 - Always Use Complex and long password. At least 16 characters long,combination of Special characters. Never use anything or name associate with you as password. Complex passwords are difficult for attacker to crack.
