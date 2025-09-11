@@ -24,15 +24,15 @@ Figure2: After examined the communication between devices by analyzing IP traffi
 ![2](https://github.com/user-attachments/assets/05b62723-2c11-4a59-9442-435de4c00330)
 
 Figure3: OSINT is perform on the  the destination IP 184.150.49.96 as shown on the screenshot below.
-![Untitled](https://github.com/user-attachments/assets/a7526d68-3224-4dc3-af67-772364d92728)
+![3](https://github.com/user-attachments/assets/27707fd7-d440-4c28-933d-47d2167b1d7d)
 
 Fig4: Filtered the IP address 184.150.49.96 using the ip.addr==184.150.49.16 and followed the HTTP stream. Again the address is benign and is related to microsft[.]com
 ![3](https://github.com/user-attachments/assets/20431e48-1719-4cfe-8300-99380e5bb485)
 
-Fig5: Let's Perform OSINT on the second destination IP address 192.168.100.101 (external)
+Fig5: The second destination IP address 192.168.100.101 (external)
 ![4](https://github.com/user-attachments/assets/3414d429-c2f3-4da2-8338-b6f455e67914)
 
-Fig6: Filtered the logs with  the ip.addr==192.168.100.101 and followed the UDP stream. We do see a file named "Passowrd.txt" that has been exfiltrated.
+Fig6: Filtered the logs with the ip.addr==192.168.100.101 and followed the UDP stream. We do see a file named "Passowrd.txt" that has been exfiltrated.
 ![5](https://github.com/user-attachments/assets/5a8b7d26-0c9b-4b6e-ba08-ca9fb90fcd62)
 
 
