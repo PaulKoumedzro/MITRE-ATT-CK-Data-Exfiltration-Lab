@@ -11,7 +11,7 @@ The purpose of this lab is to replicate a real-world data exfiltration scenario 
 # Tools Used
 
 - WireShark
-- Windows
+- Windows 
 - AbusedIPdb
 - VirusTotal
   
